@@ -1,10 +1,12 @@
-﻿namespace BookShop.Presentation
+﻿using BookShop.Infrastructure.Repositories;
+
+namespace BookShop.Presentation
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            BaseRepository baseRepository = new();
         }
     }
 }
