@@ -1,0 +1,3 @@
+{
+  "logging": "Server=localhost; Port=5432; Database=bookshop; User Id=postgres; Password=0209;"
+}

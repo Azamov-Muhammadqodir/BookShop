@@ -1,0 +1,27 @@
+﻿CREATE TABLE public.user
+(
+    id serial NOT NULL,
+    name character varying(50) NOT NULL,
+    email character varying(50) NOT NULL,
+    password character varying(50) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE book
+(
+    id serial NOT NULL,
+    name character varying(50) NOT NULL,
+    price DOUBLE PRECISION  NOT NULL,
+    author character varying(50) NOT NULL,
+    description text,
+    category character varying(50) ,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE Savat
+(
+    id serial NOT NULL,
+    userId integer not null,
+    bookId integer not null,
+    PRIMARY KEY (id)
+);
