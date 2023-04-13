@@ -7,5 +7,5 @@ using System.Threading.Tasks;
 
 namespace BookShop.Application.Interfaces.RepositoryInterfaces
 {
-    public interface IUserRepository : IRepository<User> { }
+    internal interface IUserRepository : IRepository<User> { }
 }
