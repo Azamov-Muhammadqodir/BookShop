@@ -1,6 +1,4 @@
-﻿using BookShop.Domain.Models;
-using Microsoft.Win32;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using Npgsql;
 using System;
 using System.Collections.Generic;
@@ -77,11 +75,9 @@ namespace BookShop.Infrastructure.Repositories
         }
 
     }
+
     public class Logging
     {
-        public string logging { get; set; }
+        public string logging { get; set; } 
     }
-
 }
-
-
