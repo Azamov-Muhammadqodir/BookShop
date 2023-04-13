@@ -8,11 +8,11 @@ namespace BookShop.Application.Interfaces.RepositoryInterfaces
 {
     public interface IRepository<T> where T : class
     {
-        public Task<T> AddAsync(T entity);
-        public Task<T> AddRangeAsync(IEnumerable<T> entities);
+        public Task AddAsync(T entity);
+        public Task AddRangeAsync(IEnumerable<T> entities);
         public Task<T> GetByIdAsync(int id);
-        public Task<T> GetAllAsync();
-        public Task<T> UpdateAsync(T entity);
-        public Task<T> DeleteAsync(int id);
+        public Task<IEnumerable<T>> GetAllAsync();
+        public Task<bool> UpdateAsync(T entity);
+        public Task DeleteAsync(int id);
     }
 }
